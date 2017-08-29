@@ -1,0 +1,8 @@
+name: chef-node-attributes
+title: Chef Node Attribute Tests
+maintainer: Adam Leff
+copyright: Chef Software, Inc.
+copyright_email: adamleff@chef.io
+license: Apache-2.0
+summary: Used in InSpec acceptance tests, this profile helps verify that the audit cookbook properly passes Chef node data to InSpec
+version: 0.1.0
