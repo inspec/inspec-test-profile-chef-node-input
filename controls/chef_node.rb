@@ -5,9 +5,21 @@ control 'cpu-key-present' do
   desc 'The attribute "chef_node" should be a hash of Chef node data which should include the "cpu" key from Ohai'
   impact 1.0
 
-  describe 'Chef node data' do
-    it 'should include a cpu key' do
+  describe 'Chef node data - cpu key' do
+    it 'should exist' do
       expect(node.keys).to include('cpu')
+    end
+  end
+end
+
+control 'chef_environment' do
+  title 'Chef Environment'
+  desc 'The chef node data should include the chef_environment'
+  impact 1.0
+
+  describe 'Chef node data - chef_environment' do
+    it 'should exist' do
+      expect(node.keys).to include('chef_environment')
     end
   end
 end
